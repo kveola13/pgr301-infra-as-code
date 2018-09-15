@@ -1,0 +1,13 @@
+resources:
+
+- name: common-tasks
+  type: git
+  source:
+    uri: git@github.com:telia-oss/concourse-tasks.git
+    branch: master
+
+- name: aws-governance-portal
+  type: git
+  source:
+    uri: git@github.com:TeliaSoneraNorge/aws-governance-portal.git
+    branch: master
