@@ -23,7 +23,7 @@ params:
   access_key:
   secret_key:
   session_token:
-  github_token:
+  github_token: ((github-token))
 
 run:
   path: source/concourse/tasks/terraform/terraform.sh

@@ -8,6 +8,7 @@ jobs:
     file: pgr301-infra-as-code/concourse/tasks/terraform/task.yml
     input_mapping: {source: pgr301-infra-as-code}
     params:
+      github_token: ((github_token))
       command: apply
       directories: |
           .
