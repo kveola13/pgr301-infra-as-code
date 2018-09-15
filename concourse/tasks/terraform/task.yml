@@ -26,5 +26,5 @@ params:
   github_token:
 
 run:
-  path: bash
+  path: sh
   args: [ls -la]
