@@ -26,5 +26,4 @@ params:
   github_token:
 
 run:
-  path: sh
-  args: [ls -la]
+  path: source/concourse/tasks/terraform/terraform.sh
