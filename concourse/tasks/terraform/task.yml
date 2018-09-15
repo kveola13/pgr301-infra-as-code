@@ -27,4 +27,4 @@ params:
 
 run:
   path: bash
-  args: [./source/concourse/tasks/terraform/terraform.sh]
+  args: [ls -la]
