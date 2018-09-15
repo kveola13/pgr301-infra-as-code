@@ -25,5 +25,6 @@ params:
   session_token:
   github_token:
 
-run:
-  path: source/concourse/tasks/terraform/terraform.sh
+  run:
+    path: bash
+    args: [./source/concourse/tasks/terraform/terraform.sh]

@@ -6,6 +6,7 @@ jobs:
       trigger: true
   - task: apply
     file: pgr301-infra-as-code/concourse/tasks/terraform/task.yml
+    input_mapping: {source: pgr301-infra-as-code}
     params:
       command: apply
       directories: |
