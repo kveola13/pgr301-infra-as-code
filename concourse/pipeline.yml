@@ -1,13 +1,20 @@
+jobs:
+- name: deploy-github-teams
+  plan:
+  - aggregate:
+    - get: pgr301-infra-as-code
+      trigger: true
+  - task: apply
+    file: pgr301-infra-as-code/concourse/tasks/terraform/task.yml
+    params:
+      command: apply
+      directories: |
+          .
+
 resources:
 
-- name: common-tasks
+- name: pgr301-infra-as-code
   type: git
   source:
-    uri: git@github.com:telia-oss/concourse-tasks.git
-    branch: master
-
-- name: aws-governance-portal
-  type: git
-  source:
-    uri: git@github.com:TeliaSoneraNorge/aws-governance-portal.git
+    uri: https://github.com/glennbech/pgr301-infra-as-code.git
     branch: master
