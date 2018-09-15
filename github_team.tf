@@ -1,5 +1,5 @@
 resource "github_team" "theclass" {
-  name        = "TheClass"
+  name        = "pgr301class"
   description = "The students and teacher of the class"
 }
 
