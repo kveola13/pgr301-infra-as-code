@@ -20,7 +20,7 @@ params:
   directories:
   cache: "false"
   lock_timeout: 5m
-  github_token: 70a3ff58158108b21e425208fb87f3077cb5bb12
+  github_token: ((github-token))
 
 run:
   path: source/concourse/tasks/terraform/terraform.sh
