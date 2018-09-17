@@ -9,3 +9,9 @@ resource "github_repository" "server" {
   description = "Back end application"
   private = false
 }
+
+resource "github_repository" "api" {
+  name = "api"
+  description = "The API"
+  private = false
+}
