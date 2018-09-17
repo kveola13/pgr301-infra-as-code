@@ -12,7 +12,6 @@ jobs:
       command: apply
       directories: |
           .
-
 resources:
 
 - name: pgr301-infra-as-code
