@@ -4,6 +4,6 @@
 # environment variable.
 
 provider "github" {
-  organization = "DevOpsKveola13"
+  organization = "devopskveola13rety"
 }
 
