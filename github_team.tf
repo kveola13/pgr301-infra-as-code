@@ -8,3 +8,11 @@ resource "github_team_membership" "members" {
   username = "glennbech"
   role     = "member"
 }
+
+resource "github_team_membership" "members" {
+  team_id  = "${github_team.theclass.id}"
+  username = "larstobi"
+  role     = "member"
+}
+
+
